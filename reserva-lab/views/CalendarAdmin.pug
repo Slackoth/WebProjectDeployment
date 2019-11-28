@@ -1,4 +1,4 @@
-
+0
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -11,7 +11,8 @@ html(lang="en")
     link(href='@fullcalendar/daygrid/main.css' rel='stylesheet')
     link(href='@fullcalendar/timegrid/main.css' rel='stylesheet')
     link(href='@fullcalendar/list/main.css' rel='stylesheet')
-    Link(href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/jquery-ui.css' rel='stylesheet') 
+    Link(href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/jquery-ui.css' rel='stylesheet')
+    script(type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js") 
     
     title Calendario
   body
@@ -25,6 +26,8 @@ html(lang="en")
                     li(class="nav-item active"): a(class="nav-link" href="/users")='Usuarios'
                     li(class="nav-item active"): a(class="nav-link" href="/informe")='Reportes'
                     li(class="nav-item active"): a(class="nav-link" href="#")='Búsqueda Avanzada'
+                    li(class="nav-item active"): a(class="nav-link" href="calendar/logout")
+                        ion-icon(name='power')
                 form(class="form-inline my-2 my-lg-0")
     br
     

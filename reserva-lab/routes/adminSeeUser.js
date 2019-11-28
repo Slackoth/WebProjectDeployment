@@ -22,6 +22,7 @@ router.get('/logout', (req,res)=>{
     req.logOut();
     res.redirect('/');
 })
+
 /*PUT*/
 router.put('/edit', usersControl.updateUser);
 router.put('/turn', usersControl.turnUser)

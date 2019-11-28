@@ -8,7 +8,7 @@ let denegbtn = document.getElementById('denegbtn')
 denegbtn.addEventListener('click', async()=>{
     console.log('Aprestaste'+ Changebtn.value);
     
-    await fetch(`http://localhost:3000/calendar/u?es=rechazada&&id=${Changebtn.value}`,
+    await fetch(`https://reserva-lab.herokuapp.com/calendar/u?es=rechazada&&id=${Changebtn.value}`,
     {
         method: 'PUT',
         headers: {'Content-type': 'application/json; charset=UTF-8'},
@@ -30,7 +30,7 @@ denegbtn.addEventListener('click', async()=>{
 Changebtn.addEventListener('click', async()=>{
         console.log('Aprestaste'+ Changebtn.value);
         
-        await fetch(`http://localhost:3000/calendar/u?es=confirmada&&id=${Changebtn.value}`,
+        await fetch(`https://reserva-lab.herokuapp.com/calendar/u?es=confirmada&&id=${Changebtn.value}`,
         {
             method: 'PUT',
             headers: {'Content-type': 'application/json; charset=UTF-8'},
@@ -52,7 +52,7 @@ Changebtn.addEventListener('click', async()=>{
 
 document.addEventListener('DOMContentLoaded', async ()=>{
 
-    await fetch(`http://localhost:3000/calendar/matBU`,)
+    await fetch(`https://reserva-lab.herokuapp.com/calendar/matBU`,)
     .then(res => {
           return res.json()
           
@@ -80,7 +80,7 @@ Solitbtn.addEventListener('click', async event=>{
 
     event.preventDefault();
 
-    fetch(`http://localhost:3000/calendar/evento`, {
+    fetch(`https://reserva-lab.herokuapp.com/calendar/evento`, {
         method: 'POST'
     })
     .then(res => {

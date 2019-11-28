@@ -1,6 +1,6 @@
 (async function loadCareer(){
     const career = document.getElementById('career');
-    await fetch(`http://localhost:3000/signUp/career`)
+    await fetch(`https://reserva-lab.herokuapp.com/signUp/career`)
     .then(res=>{
         return res.json()
     })

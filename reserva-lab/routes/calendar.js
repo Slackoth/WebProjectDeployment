@@ -5,7 +5,7 @@ const calendarControl = require('../controllers/calendarController')
 
 /* GET home page. */
 router.get('/', isLoggedIn, function(req, res, next) {
- if(req.session.passport.user.rol==false){ 
+ if(req.session.passport.user.rol==true){ 
       res.render('CalendarAdmin')
   } else {
     res.render('CalendarDefault')

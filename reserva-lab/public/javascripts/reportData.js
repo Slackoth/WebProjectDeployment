@@ -40,7 +40,7 @@ requestBtn.addEventListener('click', async event=>{
     const nombreMat = document.getElementById('nombreMat');
     const carnetResponsable = document.getElementById('carnetResponsable');
 
-        await fetch(`http://localhost:3000/informe/advancedRequest?fechaSol=${fechaSol.value}&fechaIni=${fechaIni.value}&horaIni=${horaIni.value}&horaFin=${horaFin.value}&nombreLab=${nombreLab.value}&estadoSol=${estadoSol.value}&nombreMat=${nombreMat.value}&carnetResponsable=${carnetResponsable.value}`)
+        await fetch(`https://reserva-lab.herokuapp.com/informe/advancedRequest?fechaSol=${fechaSol.value}&fechaIni=${fechaIni.value}&horaIni=${horaIni.value}&horaFin=${horaFin.value}&nombreLab=${nombreLab.value}&estadoSol=${estadoSol.value}&nombreMat=${nombreMat.value}&carnetResponsable=${carnetResponsable.value}`)
         .then(res=>{
             return res.json();
         })

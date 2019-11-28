@@ -17,6 +17,11 @@ router.get('/sp', calendarControl.getSoporteEventoById)
 router.get('/add', calendarControl.addSolicitud)
 router.get('/eByU', calendarControl.getEventbyUser)
 router.get('/matBU',calendarControl.getMaterias)
+router.get('/logout', (req,res)=>{
+  req.logOut();
+  res.redirect('/');
+})
+
 router.put('/u', calendarControl.updateEstado)
 
 router.post('/event', calendarControl.addSolicitud)

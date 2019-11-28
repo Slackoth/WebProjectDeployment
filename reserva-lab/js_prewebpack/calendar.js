@@ -53,20 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
       // your event source
       {
         className: 'confirmadas',
-        url: `http://localhost:3000/calendar/evento?Labo=${opt}`, // use the `url` property
+        url: `https://reserva-lab.herokuapp.com/calendar/evento?Labo=${opt}`, // use the `url` property
         color: 'green',    // an option!
         textColor: 'white'  // an option!
       },
       {
         className: 'mantenimiento',
-        url: `http://localhost:3000/calendar/sp?Labo=${opt}`,
+        url: `https://reserva-lab.herokuapp.com/calendar/sp?Labo=${opt}`,
         color:'blue',  
         textColor:'white'
       },
       //logs de usuario
       {
         className: 'pendiente',
-        url: `http://localhost:3000/calendar/eByu`,
+        url: `https://reserva-lab.herokuapp.com/calendar/eByu`,
         color: 'Gray',
         textColor: 'Black',
         description: 'Estado Pendiente'
